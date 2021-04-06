@@ -168,7 +168,8 @@ export class AuthService implements IAuthService {
           client_id: this.authConfig.client_id,
           extras: (codeVerifier) ? { 
             "code_verifier": codeVerifier
-          } : {}
+          } : {},
+          requestTokenExtras: this.authConfig.requestTokenExtras,
 
         }
         

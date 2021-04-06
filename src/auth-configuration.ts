@@ -1,3 +1,5 @@
+import { StringMap } from "@openid/appauth";
+
 export enum AuthenticationType {
     Token = "token",
     AuthorizationCode = "code",
@@ -10,5 +12,6 @@ export interface IAuthConfig {
     redirect_url: string, 
     end_session_redirect_url: string, 
     scopes: string,
-    pkce : boolean
+    pkce : boolean,
+    requestTokenExtras: StringMap
 }

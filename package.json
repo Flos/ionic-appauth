@@ -43,7 +43,7 @@
   ],
   "types": "lib/index.d.ts",
   "dependencies": {
-    "@openid/appauth": "^1.3.0",
+    "@openid/appauth": "git+https://github.com/Flos/AppAuth-JS.git#master",
     "guid-typescript": "^1.0.9"
   },
   "optionalDependencies": {
